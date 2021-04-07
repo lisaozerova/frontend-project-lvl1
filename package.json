@@ -19,5 +19,13 @@
   "bugs": {
     "url": "https://github.com/ElizavetaOzerova/frontend-project-lvl1/issues"
   },
-  "homepage": "https://github.com/ElizavetaOzerova/frontend-project-lvl1#readme"
+  "homepage": "https://github.com/ElizavetaOzerova/frontend-project-lvl1#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "eslint": "^7.23.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  }
 }
