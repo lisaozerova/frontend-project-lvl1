@@ -42,7 +42,7 @@ const makeGameSubject = () => {
 };
 
 const playCalc = (userName) => {
-  play(userName, INTRO, makeGameSubject );
+  play(userName, INTRO, makeGameSubject);
 };
 
 export default playCalc;
