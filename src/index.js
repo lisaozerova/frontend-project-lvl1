@@ -17,11 +17,12 @@ const getRandomIntInclusive = (min, max) => (
   Math.floor(Math.random() * (max - min + 1)) + min
 );
 
-const play = (userName, intro, gameSubject, correctAnswer) => {
+const play = (userName, intro, makeGameSubject) => {
   console.log(intro);
   let round = 0;
 
   for (round; round < ROUND_COUNT; round += 1) {
+    const { gameSubject, correctAnswer } = makeGameSubject();
     const userAnswer = readlineSync
       .question(`${GamePhrase.QUESTION} ${gameSubject}\r\n${GamePhrase.ANSWER}`)
       .trim()

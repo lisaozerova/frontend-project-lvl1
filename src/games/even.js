@@ -10,11 +10,17 @@ const getCorrectAnswerPhrase = (value) => (value ? GamePhrase.YES : GamePhrase.N
 
 const isNumberParity = (number) => number % 2 === 0;
 
-const playEven = (userName) => {
+const makeGameSubject = () => {
   const num = getRandomIntInclusive(1, 100);
-  const correctAnswer = getCorrectAnswerPhrase(isNumberParity(num));
 
-  play(userName, INTRO, num, correctAnswer);
+  return {
+    gameSubject: num,
+    correctAnswer: getCorrectAnswerPhrase(isNumberParity(num)),
+  };
+};
+
+const playEven = (userName) => {
+  play(userName, INTRO, makeGameSubject);
 };
 
 export default playEven;

@@ -31,12 +31,18 @@ const getRandomExpressionMembers = () => {
   return [num1, operator, num2];
 };
 
-const playCalc = (userName) => {
+const makeGameSubject = () => {
   const [num1, operator, num2] = getRandomExpressionMembers();
   const expression = `${num1} ${operator} ${num2}`;
-  const correctAnswer = calcNumbers(num1, num2, operator);
 
-  play(userName, INTRO, expression, correctAnswer);
+  return {
+    gameSubject: expression,
+    correctAnswer: calcNumbers(num1, num2, operator),
+  };
+};
+
+const playCalc = (userName) => {
+  play(userName, INTRO, makeGameSubject );
 };
 
 export default playCalc;

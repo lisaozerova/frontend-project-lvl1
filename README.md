@@ -8,5 +8,5 @@
 ![Greet everyone](https://github.com/ElizavetaOzerova/frontend-project-lvl1/actions/workflows/nodejs.yml/badge.svg)
 
 ### Asciinema:
-[![Game "Parity check"](https://asciinema.org/a/2e59b777-3876-42bd-be88-e0d72dc77951.png)](https://asciinema.org/a/450371)
-[![Game "Сalculator"](https://asciinema.org/a/2e59b777-3876-42bd-be88-e0d72dc77951.png)](https://asciinema.org/a/450371)
+[![Game "Parity check"](https://asciinema.org/a/450371.svg)](https://asciinema.org/a/450371)
+[![Game "Сalculator"](https://asciinema.org/a/455615.svg)](https://asciinema.org/a/455615)
