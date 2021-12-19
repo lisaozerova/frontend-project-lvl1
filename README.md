@@ -9,5 +9,5 @@
 
 ### Asciinema:
 [![Game "Parity check"](https://asciinema.org/a/450371.svg)](https://asciinema.org/a/450371)
-[![Game "Сalculator"](https://asciinema.org/a/455615.svg)](https://asciinema.org/a/455615) // перезаписать со всеми исходами
-[![Game "GCD"]()]()  // записать аскинему со всеми исходами
+[![Game "Сalculator"](https://asciinema.org/a/qKhErokK6wHkaosoonOrHarib.svg)](https://asciinema.org/a/qKhErokK6wHkaosoonOrHarib)
+[![Game "GCD"](https://asciinema.org/a/PX7fv5SAow4jdea5Eu6UZAGIo.svg)](https://asciinema.org/a/PX7fv5SAow4jdea5Eu6UZAGIo)

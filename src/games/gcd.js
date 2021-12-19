@@ -2,9 +2,18 @@ import { getRandomIntInclusive, play } from '../index.js';
 
 const INTRO = 'Find the greatest common divisor of given numbers.';
 
-// TODO: написать логику получения gcd
+const isNumberDivisible = (num1, num2) => (num1 % num2 === 0);
+
 const getGCD = (num1, num2) => {
-  let result;
+  let result = (num1 <= num2) ? num1 : num2;
+
+  while (result > 1) {
+    if (isNumberDivisible(num1, result) && isNumberDivisible(num2, result)) {
+      break;
+    }
+
+    result -= 1;
+  }
 
   return result;
 };
