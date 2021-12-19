@@ -11,3 +11,4 @@
 [![Game "Parity check"](https://asciinema.org/a/450371.svg)](https://asciinema.org/a/450371)
 [![Game "Сalculator"](https://asciinema.org/a/qKhErokK6wHkaosoonOrHarib.svg)](https://asciinema.org/a/qKhErokK6wHkaosoonOrHarib)
 [![Game "GCD"](https://asciinema.org/a/PX7fv5SAow4jdea5Eu6UZAGIo.svg)](https://asciinema.org/a/PX7fv5SAow4jdea5Eu6UZAGIo)
+[![Game "Progression"]()]() // TODO: добавить аскинему
