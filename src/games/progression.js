@@ -14,7 +14,6 @@ const getProgression = (length) => {
   return result;
 };
 
-// TODO: разбить логику на несколько функций
 const makeGameSubject = () => {
   const length = getRandomIntInclusive(5, 10);
   const hiddenElementIndex = getRandomIntInclusive(0, length);
