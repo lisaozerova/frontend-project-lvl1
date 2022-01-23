@@ -1,4 +1,7 @@
 #!/usr/bin/env node
 import playGCD from '../src/games/gcd.js';
+import greet from '../src/cli.js';
 
-playGCD();
+const userName = greet();
+
+playGCD(userName);
