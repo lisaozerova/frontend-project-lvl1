@@ -12,3 +12,4 @@
 [![Game "Сalculator"](https://asciinema.org/a/qKhErokK6wHkaosoonOrHarib.svg)](https://asciinema.org/a/qKhErokK6wHkaosoonOrHarib)
 [![Game "GCD"](https://asciinema.org/a/PX7fv5SAow4jdea5Eu6UZAGIo.svg)](https://asciinema.org/a/PX7fv5SAow4jdea5Eu6UZAGIo)
 [![Game "Progression"](https://asciinema.org/a/gy8n25KZCtA0jfWtoyofN5W6z.svg)](https://asciinema.org/a/gy8n25KZCtA0jfWtoyofN5W6z)
+[![Game "Prime"](https://asciinema.org/a/463712.svg)](https://asciinema.org/a/463712)
