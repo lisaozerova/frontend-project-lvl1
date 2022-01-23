@@ -1,4 +1,5 @@
 import readlineSync from 'readline-sync';
+import greet from './cli.js';
 
 const ROUND_COUNT = 3;
 
@@ -17,8 +18,11 @@ const getRandomIntInclusive = (min, max) => (
   Math.floor(Math.random() * (max - min + 1)) + min
 );
 
-const play = (userName, intro, makeGameSubject) => {
+const play = (intro, makeGameSubject) => {
+  const userName = greet();
+
   console.log(intro);
+
   let round = 0;
 
   for (round; round < ROUND_COUNT; round += 1) {

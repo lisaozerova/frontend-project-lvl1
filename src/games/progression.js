@@ -29,8 +29,8 @@ const makeGameSubject = () => {
   };
 };
 
-const playProgression = (userName) => {
-  play(userName, INTRO, makeGameSubject);
+const playProgression = () => {
+  play(INTRO, makeGameSubject);
 };
 
 export default playProgression;

@@ -27,8 +27,8 @@ const makeGameSubject = () => {
   };
 };
 
-const playEven = (userName) => {
-  play(userName, INTRO, makeGameSubject);
+const playEven = () => {
+  play(INTRO, makeGameSubject);
 };
 
 export default playEven;
