@@ -1,12 +1,12 @@
 import {
-  GamePhrase,
+  GameText,
   getRandomIntInclusive,
   play,
 } from '../index.js';
 
 const INTRO = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const getCorrectAnswerPhrase = (value) => (value ? GamePhrase.YES : GamePhrase.NO);
+const getCorrectAnswerText = (value) => (value ? GameText.YES : GameText.NO);
 
 const isNumberPrime = (number) => {
   for (let i = 2; i < number; i += 1) {
@@ -23,7 +23,7 @@ const makeGameSubject = () => {
 
   return {
     gameSubject: num,
-    correctAnswer: getCorrectAnswerPhrase(isNumberPrime(num)),
+    correctAnswer: getCorrectAnswerText(isNumberPrime(num)),
   };
 };
 

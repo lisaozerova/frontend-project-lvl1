@@ -1,12 +1,12 @@
 import {
-  GamePhrase,
+  GameText,
   getRandomIntInclusive,
   play,
 } from '../index.js';
 
 const INTRO = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const getCorrectAnswerPhrase = (value) => (value ? GamePhrase.YES : GamePhrase.NO);
+const getCorrectAnswerText = (value) => (value ? GameText.YES : GameText.NO);
 
 const isNumberParity = (number) => number % 2 === 0;
 
@@ -15,7 +15,7 @@ const makeGameSubject = () => {
 
   return {
     gameSubject: num,
-    correctAnswer: getCorrectAnswerPhrase(isNumberParity(num)),
+    correctAnswer: getCorrectAnswerText(isNumberParity(num)),
   };
 };
 

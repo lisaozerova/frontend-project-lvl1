@@ -2,7 +2,7 @@ import readlineSync from 'readline-sync';
 
 const ROUND_COUNT = 3;
 
-const GamePhrase = {
+const GameText = {
   QUESTION: 'Question:',
   YES: 'yes',
   NO: 'no',
@@ -24,26 +24,26 @@ const play = (userName, intro, makeGameSubject) => {
   for (round; round < ROUND_COUNT; round += 1) {
     const { gameSubject, correctAnswer } = makeGameSubject();
     const userAnswer = readlineSync
-      .question(`${GamePhrase.QUESTION} ${gameSubject}\r\n${GamePhrase.ANSWER}`)
+      .question(`${GameText.QUESTION} ${gameSubject}\r\n${GameText.ANSWER}`)
       .trim()
       .toLowerCase();
 
     const isUserAnswerCorrect = String(correctAnswer) === userAnswer;
 
     if (isUserAnswerCorrect) {
-      console.log(GamePhrase.CORRECT);
+      console.log(GameText.CORRECT);
     } else {
-      console.log(`'${userAnswer}' ${GamePhrase.WRONG} '${correctAnswer}'.`);
+      console.log(`'${userAnswer}' ${GameText.WRONG} '${correctAnswer}'.`);
       break;
     }
   }
 
-  const finalPhrase = (round === ROUND_COUNT) ? GamePhrase.WIN : GamePhrase.LOSE;
+  const finalPhrase = (round === ROUND_COUNT) ? GameText.WIN : GameText.LOSE;
   console.log(`${finalPhrase} ${userName}!`);
 };
 
 export {
-  GamePhrase,
+  GameText,
   getRandomIntInclusive,
   play,
 };
